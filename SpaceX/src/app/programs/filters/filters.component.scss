@@ -1,0 +1,45 @@
+.sidenav {
+    height: 100%;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav p {
+    padding: 6px 8px 12px 16px;
+    font-size: 17px;
+    text-align: center;
+    border-bottom: solid #ccc 1px;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+.btn {
+    background-color: #65e86a;
+    border-radius: 5px;
+    padding: 7px;
+    color: #333;
+    font-size: 14px;
+    width: 60px;
+}
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.active {
+    background-color: #258e29;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    font-size: 14px;
+    width: 60px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 40%;
+}

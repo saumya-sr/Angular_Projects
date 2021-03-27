@@ -1,0 +1,24 @@
+<div class="row" styel="background-color: #fff;">
+    <div class="col-3 col-m-6" *ngFor="let program of spaceXPrograms;let i = index;">
+        <div class="card">
+            <img class="image" [src]="getImage(program)" alt="{{ program?.mission_name }}">
+            <div class="card-container ">
+                <h4>{{ program?.mission_name }} #{{ program?.flight_number }}</h4>
+                <ul>
+                    <li>
+                        Mission Ids : {{ program?.mission_name }}
+                    </li>
+                    <li>
+                        Launch Year : {{ program?.launch_year }}
+                    </li>
+                    <li>
+                        Successful Launch : {{ program?.launch_success }}
+                    </li>
+                    <li>
+                        Successful Landing : {{ getLandSuccessStatus(program) }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

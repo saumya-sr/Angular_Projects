@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-3 col-m-3">
+        <app-filters (filters)="getFilters($event)"></app-filters>
+    </div>
+    <div class="col-9 col-m-9">
+        <app-spacex-programs [filterApplied]="filterApplied"></app-spacex-programs>
+    </div>
+
+</div>

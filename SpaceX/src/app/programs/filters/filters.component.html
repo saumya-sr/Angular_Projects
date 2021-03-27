@@ -1,0 +1,37 @@
+<!-- <div class="row">
+    <div class="col-12 col-m-12"> -->
+<div class="sidenav">
+    <h2>Filters</h2>
+    <p>Launch Year</p>
+    <div class="row">
+        <div class=" col-5 col-m-5" *ngFor="let year of LAUNCH_YEARS">
+            <button class="btn year" id="{{year}}"
+                (click)="activateSelectedBtn('year', year, FILTER_TYPES.LAUNCH_YEAR);emitValueToFilter(FILTER_TYPES.LAUNCH_YEAR, year)">{{
+                year }}</button>
+        </div>
+    </div>
+    <p>Successful Launch</p>
+    <div class="row">
+        <div class="col-5 col-m-5">
+            <button class="btn launch" id="launch_true"
+                (click)="activateSelectedBtn('launch' ,'launch_true', FILTER_TYPES.LAUNCH_SUCCESS);emitValueToFilter(FILTER_TYPES.LAUNCH_SUCCESS, 'true')">True</button>
+        </div>
+        <div class="col-5 col-m-5">
+            <button class="btn launch" id="launch_false"
+                (click)="activateSelectedBtn('launch', 'launch_false', FILTER_TYPES.LAUNCH_SUCCESS);emitValueToFilter(FILTER_TYPES.LAUNCH_SUCCESS, 'false')">False</button>
+        </div>
+    </div>
+    <p>Successful Landing</p>
+    <div class="row">
+        <div class="col-5 col-m-5">
+            <button class="btn land" id="land_true"
+                (click)="activateSelectedBtn('land', 'land_true', FILTER_TYPES.LAUNCH_SUCCESS);emitValueToFilter(FILTER_TYPES.LAND_SUCCESS, 'true')">True</button>
+        </div>
+        <div class="col-5 col-m-5">
+            <button class="btn land" id="land_false"
+                (click)="activateSelectedBtn('land', 'land_false', FILTER_TYPES.LAUNCH_SUCCESS);emitValueToFilter(FILTER_TYPES.LAND_SUCCESS, 'false')">False</button>
+        </div>
+    </div>
+</div>
+<!-- </div>
+</div> -->
